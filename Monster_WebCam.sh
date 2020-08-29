@@ -1,4 +1,4 @@
-__  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __ 
+_ _  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __ 
 #|  \/  |/ _ \| \ | / ___|_   _| ____|  _ \    | | | |  / \  / ___| |/ / 
 #| |\/| | | | |  \| \___ \ | | |  _| | |_) |   | |_| | / _ \| |   | ' /  
 #| |  | | |_| | |\  |___) || | | |___|  _ <    |  _  |/ ___ \ |___| . \  
@@ -10,28 +10,30 @@ __  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __
 #                         </> MONSTER_hp </>
 
 trap 'printf "\n";stop' 2
-
 clear
-
 banner() {
 
-printf "\e[1;91m
- __  __                 _          __        __   _      ____                 
-|  \/  | ___  _ __  ___| |_ ___ _ _\ \      / /__| |__  / ___|__ _ _ __ ___   
-| |\/| |/ _ \| '_ \/ __| __/ _ \ '__\ \ /\ / / _ \ '_ \| |   / _  | '_   _ \  
-| |  | | (_) | | | \__ \ ||  __/ |   \ V  V /  __/ |_) | |__| (_| | | | | | | 
-|_|  |_|\___/|_| |_|___/\__\___|_|____\_/\_/ \___|_.__/ \____\__,_|_| |_| |_| 
-                                |_____|                                       
-\n"
+ 
+printf "\e[1;92m
+ __  __                 _          __        __   _      ____                
+|  \/  | ___  _ __  ___| |_ ___ _ _\ \      / /__| |__  / ___|__ _ _ __ ___  
+| |\/| |/ _ \| '_ \/ __| __/ _ \ '__\ \ /\ / / _ \ '_ \| |   / _  | '_   _ |``
+| |  | | (_) | | | \__ \ ||  __/ |   \ V  V /  __/ |_) | |__| (_| | | | | | |
+|_|  |_|\___/|_| |_|___/\__\___|_|____\_/\_/ \___|_.__/ \____\__,_|_| |_| |_|
+                                |_____|                                      
+/n"
+printf "\e[1;90m    \n"
 
-printf " \e[1;91m      ===>  !!! Hack Web Cam  Target !!!  <===\n"
+printf " \e[1;91m          ===> !!! Hack Web Cam Target !!!  <===\n"
+printf " \e[95m\n"
+printf " \e[1;93m GitHub : https://github.com/MONSTER-hp/MONSTER_HACK \n"
 printf " \e[90m\n"
-printf " \e[1;94m GitHub : https://github.com/MONSTER-hp/MONSTER_HACK \n"
+printf " \e[1;96m   Telegram Chanell : https://t.me/MONSTER_SECURITY\n"
 printf " \e[90m\n"
-printf " \e[1;92m   Telegram Chanell : https://t.me/MONSTER_SECURITY\n"
-printf " \e[90m\n"
-printf " \e[1;92m      WebSayte : WwW.MONSTER-SECURITY.blogfa.com\n"
+printf " \e[1;95m      WebSayte : WwW.MONSTER-SECURITY.blogfa.com\n"
 printf "\n"
+
+
 
 
 }
