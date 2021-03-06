@@ -17,7 +17,7 @@ printf "\e[1;92m
 | |_| | (_) \ V  V /| | | | | (_) | (_| | (_| \__ \                                     |____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|___/
                                                             
 /n"
-printf " \e[1;95m    Download pakege Loading ... \n"
+printf " \e[1;95m    Download pakege Loading 15 min time \n"
 printf "\n"
 
 printf "\e[1;90m    \n"
