@@ -162,6 +162,7 @@ if [[ -e ngrok-stable-linux-arm.zip ]]; then
 unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
+./ngrok authtoken 1pNPp1Tg0trSteYnDWVVocff6gq_2CVCycNZocXS1n3kDL6ye
 else
 printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m pkg install wget\e[0m\n"
 exit 1
