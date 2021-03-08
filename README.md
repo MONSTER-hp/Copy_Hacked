@@ -10,7 +10,7 @@
 
 3-pkg install php wget openssh openssl
 4- cd Monster_WebCam
-5-bash Monster_WebCam.sh
+
 
 
 ۶-سپس گزینه 02 یعنی همون
